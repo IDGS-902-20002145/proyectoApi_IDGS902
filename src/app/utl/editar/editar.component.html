@@ -1,0 +1,9 @@
+<h3>Editar</h3>
+<hr>
+<form (ngSubmit)="obtenerAlumno(edAlumno.id)">
+  <input type="text" name="id" [(ngModel)]="edAlumno.id" placeholder="ID">
+  <input type="text" name="nombre" [(ngModel)]="edAlumno.nombre" placeholder="Nombre">
+  <input type="number" name="edad" [(ngModel)]="edAlumno.edad" placeholder="Edad">
+  <input type="email" name="correo" [(ngModel)]="edAlumno.correo" placeholder="Correo">
+  <button type="submit" class="btn btn-primary" (click)="editar()">Editar</button>
+</form>
